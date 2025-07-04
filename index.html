@@ -1,51 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Set Your Heart Ablaze - Quote Widget</title>
+  <title>Set Your Heart Ablaze</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+
     body {
       margin: 0;
       padding: 0;
+      height: 100vh;
+      background: linear-gradient(to bottom, #ff914d, #ff5e57, #2c2c2c);
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      background: #1f1f1f;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Zen Tokyo Zoo', cursive;
     }
-    .quote-box {
-      background: #ff5e57;
-      color: white;
+
+    .quote-container {
+      width: 300px;
+      height: 600px;
+      background: rgba(0, 0, 0, 0.85);
+      border: 3px solid #ff5e57;
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-      max-width: 500px;
+      color: #fff;
       text-align: center;
-      animation: pulse 3s infinite;
+      box-shadow: 0 0 40px #ff5e57;
+      animation: flicker 3s infinite alternate;
     }
-    .quote-box h1 {
-      font-size: 1.8rem;
+
+    .quote-container h1 {
+      font-size: 2rem;
       margin: 0;
     }
-    .quote-box p {
-      margin-top: 1rem;
+
+    .quote-container p {
       font-size: 1rem;
-      opacity: 0.85;
+      margin-top: 2rem;
+      font-family: sans-serif;
+      font-weight: bold;
+      letter-spacing: 1px;
+      opacity: 0.8;
     }
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.02); }
-      100% { transform: scale(1); }
+
+    @keyframes flicker {
+      0% { box-shadow: 0 0 20px #ff5e57; }
+      100% { box-shadow: 0 0 40px #ff914d; }
     }
   </style>
 </head>
 <body>
-  <div class="quote-box">
-    <h1>"Set your heart ablaze."</h1>
-    <p>&mdash; Kyojuro Rengoku</p>
+  <div class="quote-container">
+    <h1>Set your<br>heart ablaze</h1>
+    <p>— Kyojuro Rengoku</p>
   </div>
 </body>
 </html>
