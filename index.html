@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Set Your Heart Ablaze - Quote Widget</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #1f1f1f;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .quote-box {
+      background: #ff5e57;
+      color: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      max-width: 500px;
+      text-align: center;
+      animation: pulse 3s infinite;
+    }
+    .quote-box h1 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+    .quote-box p {
+      margin-top: 1rem;
+      font-size: 1rem;
+      opacity: 0.85;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="quote-box">
+    <h1>"Set your heart ablaze."</h1>
+    <p>&mdash; Kyojuro Rengoku</p>
+  </div>
+</body>
+</html>
